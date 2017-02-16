@@ -45,24 +45,24 @@ The concept of this assignment is to create a series of *Data Access Objects* (*
   * Implement `get(id)` for both classes
   * Implement `save(Location)` and `save(Interest)`
 
-* Add a "location" field to the **Person** class that is the data type `Location`
+* Add a *"location"* field to the **Person** class that is the data type `Location`
 
-* Add a "interests" field to the **Person** class that is the data type `Set<Interest>`
+* Add a *"interests"* field to the **Person** class that is the data type `Set<Interest>`
 
 * Modify the `get(id)` method in the **PersonDao** to interact with the **LocationDao** and **InterestDao** in order to ensure that all **Person** objects retrtieved have accurate data in their  *interests* and *location* fields.
 
 * Modify the `save(Person)` method in the **PersonDao** to also update the *Location Table*, the *Interest Table*, and any related *Join Tables* or *Join Columns* so that the contents of the saved **Person** object are stored accurately
 
 * Add Test Cases to demonstrate that
-  * A new Person object can be stored
-  * A Person object can be retrieved
-  * An existing Person can be updated
-  * A new Location can be stored
-  * A Location object can be retrieved
-  * An existing Location can be updated
-  * A relationship between a Person and a Location can be stored
-  * A new Interest can be stored
-  * An Interest object can be retrieved
-  * An exiting Interest can be updated
-  * A relationship between a Person and a series of Interests can be stored
+  * A new **Person** object can be stored
+  * A **Person** object can be retrieved
+  * An existing **Person** can be updated
+  * A new **Location** can be stored
+  * A **Location** object can be retrieved
+  * An existing **Location** can be updated
+  * A relationship between a **Person** and a **Location** can be stored
+  * A new **Interest** can be stored
+  * An **Interest** object can be retrieved
+  * An exiting **Interest** can be updated
+  * A relationship between a **Person** and a series of **Interests** can be stored
   * The `PersonDao.findInterestGroup(Interest, Location)` method operates with accurate results
